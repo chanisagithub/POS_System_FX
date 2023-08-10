@@ -1,13 +1,16 @@
 package bo;
 
-public class BoFactory {
-    private static BoFactory boFactory;
+import bo.custom.impl.ItemBoImpl;
+import bo.custom.impl.LoginBoImpl;
 
-    private BoFactory(){}
+public class BOFactory {
+    private static BOFactory boFactory;
 
-    public static BoFactory gertBoFactory(){
+    private BOFactory(){}
+
+    public static BOFactory gertBoFactory(){
         if(boFactory==null){
-            return boFactory=new BoFactory();
+            return boFactory=new BOFactory();
         }else{
             return boFactory;
         }
@@ -18,7 +21,7 @@ public class BoFactory {
             case LOGIN:
                 return new LoginBoImpl();
             case ITEM:
-                return new ItemBoimpl();
+                return new ItemBoImpl();
             default:
                 return null;
         }
