@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="549.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane prefHeight="549.0" prefWidth="549.0" stylesheets="@style/LoginPage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <ImageView fitHeight="549.0" fitWidth="594.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,7 +22,7 @@
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <TextField layoutX="187.0" layoutY="301.0" prefHeight="26.0" prefWidth="226.0" />
+      <TextField fx:id="txtusername" layoutX="187.0" layoutY="301.0" prefHeight="26.0" prefWidth="226.0" promptText="username or email" styleClass="usernameField" />
       <Label layoutX="184.0" layoutY="268.0" prefHeight="26.0" prefWidth="79.0" text="Email">
          <font>
             <Font name="System Bold" size="20.0" />
@@ -34,8 +33,8 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="185.0" layoutY="388.0" prefHeight="26.0" prefWidth="226.0" />
-      <Button layoutX="248.0" layoutY="454.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: #778beb;" text="Login" textAlignment="CENTER" textFill="WHITE">
+      <TextField fx:id="txtpassword" layoutX="185.0" layoutY="388.0" prefHeight="26.0" prefWidth="226.0" promptText="password" />
+      <Button layoutX="248.0" layoutY="454.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: #778beb;" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
