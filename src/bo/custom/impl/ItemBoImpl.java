@@ -57,7 +57,7 @@ public class ItemBoImpl implements ItemBO {
 
     @Override
     public ItemDTO getItemByID(String itemID){
-        Item itemById = itemDAO.getItemById(itemID)
+        Item itemById = itemDAO.getItemById(itemID);
             if (itemById != null){
                 return new ItemDTO(
                         itemById.getItemID(),
