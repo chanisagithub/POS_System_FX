@@ -33,7 +33,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="txtpassword" layoutX="185.0" layoutY="388.0" prefHeight="26.0" prefWidth="226.0" promptText="password" />
+      <TextField fx:id="txtpassword" layoutX="185.0" layoutY="388.0" prefHeight="26.0" prefWidth="226.0" promptText="password" style="-fx-background-color: black;" />
       <Button layoutX="248.0" layoutY="454.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: #778beb;" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
