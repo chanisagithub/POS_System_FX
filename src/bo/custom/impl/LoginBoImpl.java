@@ -4,14 +4,13 @@ import bo.custom.LoginBO;
 import dao.DAOFactory;
 import dao.custom.LoginDAO;
 
-import java.sql.SQLException;
 
 public class LoginBoImpl implements LoginBO {
 
     LoginDAO loginDAO = (LoginDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.LOGIN);
 
     @Override
-    public boolean checkPassword(String username,String password) throws SQLException, ClassNotFoundException {
+    public boolean checkPassword(String username,String password) {
 
         String passwordByUsername = loginDAO.getPasswordByUsername(username);
         if (passwordByUsername == null){
@@ -20,7 +19,7 @@ public class LoginBoImpl implements LoginBO {
     }
 
     @Override
-    public String getUserFullName(String username) throws ClassNotFoundException {
+    public String getUserFullName(String username){
         return  loginDAO.getUserFullName(username);
     }
 }
