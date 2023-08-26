@@ -9,38 +9,56 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="566.0" prefWidth="738.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
+<AnchorPane prefHeight="609.0" prefWidth="975.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
     <children>
         <Label layoutX="21.0" layoutY="14.0" prefHeight="34.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="ADD ITEMS" textFill="WHITE">
             <font>
-                <Font size="24.0" />
+                <Font size="29.0" />
             </font>
         </Label>
-        <TextField layoutX="122.0" layoutY="60.0" prefHeight="26.0" prefWidth="216.0" promptText="Item ID" />
-        <TextField layoutX="122.0" layoutY="97.0" prefHeight="10.0" prefWidth="216.0" promptText="Item Name" />
-        <Label layoutX="48.0" layoutY="64.0" text="Item ID :" textFill="WHITE" />
-        <Label layoutX="48.0" layoutY="101.0" text="Item Name :" textFill="WHITE" />
-        <TextField layoutX="122.0" layoutY="133.0" prefHeight="10.0" prefWidth="216.0" promptText="Batch No" />
-        <Label layoutX="48.0" layoutY="137.0" text="Batch No :" textFill="WHITE" />
-        <TextField layoutX="473.0" layoutY="60.0" prefHeight="26.0" prefWidth="216.0" promptText="Item Price" />
-        <TextField layoutX="473.0" layoutY="97.0" prefHeight="10.0" prefWidth="216.0" promptText="Supplier" />
-        <Label layoutX="399.0" layoutY="64.0" text="Item Price :" textFill="WHITE" />
-        <Label layoutX="399.0" layoutY="101.0" text="Supplier :" textFill="WHITE" />
-        <TextField layoutX="473.0" layoutY="133.0" prefHeight="10.0" prefWidth="216.0" promptText="Exp Date" />
-        <Label layoutX="399.0" layoutY="137.0" text="Exp Date :" textFill="WHITE" />
-        <Separator layoutX="48.0" layoutY="234.0" prefHeight="5.0" prefWidth="642.0" />
-        <TableView layoutX="48.0" layoutY="240.0" prefHeight="302.0" prefWidth="642.0">
+        <TextField layoutX="132.0" layoutY="60.0" prefHeight="10.0" prefWidth="278.0" promptText="Item ID" />
+        <TextField layoutX="132.0" layoutY="97.0" prefHeight="10.0" prefWidth="278.0" promptText="Item Name" />
+        <Label layoutX="48.0" layoutY="64.0" text="Item ID :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Label layoutX="48.0" layoutY="101.0" text="Item Name :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <TextField layoutX="132.0" layoutY="133.0" prefHeight="10.0" prefWidth="278.0" promptText="Batch No" />
+        <Label layoutX="48.0" layoutY="137.0" text="Batch No :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <TextField layoutX="623.0" layoutY="60.0" prefHeight="26.0" prefWidth="278.0" promptText="Item Price" />
+        <TextField layoutX="623.0" layoutY="97.0" prefHeight="26.0" prefWidth="278.0" promptText="Supplier" />
+        <Label layoutX="541.0" layoutY="64.0" text="Item Price :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Label layoutX="551.0" layoutY="102.0" text="Supplier :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <TextField layoutX="623.0" layoutY="133.0" prefHeight="26.0" prefWidth="278.0" promptText="Exp Date" />
+        <Label layoutX="546.0" layoutY="138.0" text="Exp Date :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Separator layoutX="16.0" layoutY="233.0" prefHeight="6.0" prefWidth="944.0" />
+        <TableView layoutX="48.0" layoutY="240.0" prefHeight="359.0" prefWidth="854.0">
             <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
                 <TableColumn prefWidth="75.0" text="C2" />
             </columns>
         </TableView>
-        <Button layoutX="624.0" layoutY="182.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: black;" text="Add" textFill="WHITE">
+        <Button layoutX="811.0" layoutY="195.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: black;" text="Add" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="13.0" />
             </font>
         </Button>
-        <Button layoutX="548.0" layoutY="182.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #d1ccc0;" text="Cancel">
+        <Button layoutX="735.0" layoutY="195.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #d1ccc0;" text="Cancel">
             <font>
                 <Font name="System Bold" size="13.0" />
             </font>
