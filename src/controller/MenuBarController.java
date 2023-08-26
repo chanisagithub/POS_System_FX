@@ -2,6 +2,8 @@ package controller;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
@@ -27,6 +29,12 @@ public class MenuBarController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtUserFullName.setText(ObjectPasser.userFullName);
+        startClock();
+
+        URL resourse = getClass().getResource("/view/Dashboard.fxml");
+        Parent load = FXMLLoader.load(resourse);
+        playgroundAnchorpane.getChildren().clear();
+        playgroundAnchorpane.getChildren().add(load);
 
     }
 
