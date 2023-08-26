@@ -48,7 +48,7 @@
           <MenuItem mnemonicParsing="false" text="Action 2" />
         </items>
          <font>
-            <Font size="20.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
