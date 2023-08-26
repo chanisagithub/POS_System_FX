@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuBarController">
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@style/MenuBar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuBarController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e5579" height="95.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="970.0" />
       <ImageView fitHeight="56.0" fitWidth="54.0" layoutX="34.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
@@ -34,7 +34,7 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Button layoutX="302.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #1abae8; -fx-background-radius: 5 0 0 5;" text="Dashboard">
+      <Button id="btnDashboard" layoutX="302.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #1abae8; -fx-background-radius: 5 0 0 5;" text="Dashboard">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -42,7 +42,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <MenuButton layoutX="438.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 0 0 0;" text="Order">
+      <MenuButton id="btnmenuOrder" layoutX="438.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 0 0 0;" text="Order">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
           <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </MenuButton>
-      <MenuButton layoutX="560.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 0 0 0;" text="Customer">
+      <MenuButton id="btnmenuCustomer" layoutX="560.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 0 0 0;" text="Customer">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -66,7 +66,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </MenuButton>
-      <MenuButton layoutX="705.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="132.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 5 5 0;" text="Items">
+      <MenuButton id="btnmenuItems" layoutX="705.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="132.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 5 5 0;" text="Items">
          <items>
             <MenuItem mnemonicParsing="false" text="Action 1" />
             <MenuItem mnemonicParsing="false" text="Action 2" />

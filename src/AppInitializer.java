@@ -9,7 +9,7 @@ import java.io.IOException;
 public class AppInitializer extends Application {
     @Override
     public void start(Stage mainStage) throws IOException {
-        Parent parent= FXMLLoader.load(this.getClass().getResource("./view/MenuBar.fxml"));
+        Parent parent= FXMLLoader.load(this.getClass().getResource("./view/LoginForm.fxml"));
         Scene scene=new Scene(parent);
         mainStage.setScene(scene);
         mainStage.show();
