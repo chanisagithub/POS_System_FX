@@ -19,12 +19,12 @@
             <Image url="@assets/icons8-user-100.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblTime" layoutX="876.0" layoutY="38.0" text="01.00 PM" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="lblTime" layoutX="868.0" layoutY="38.0" text="01.00 PM" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="879.0" layoutY="66.0" text="12 October" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="lblDate" layoutX="871.0" layoutY="66.0" text="12 October" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
