@@ -93,6 +93,10 @@ public class AddItemController {
             if (b){
                 Alert alert = new Alert(Alert.AlertType.INFORMATION,"Item Saved");
                 alert.show();
+                
+                clearField();
+                generateAndSetNextId();
+                setDataToTable();
 
 
             }else{
@@ -111,7 +115,7 @@ public class AddItemController {
                     alert.show();
                     clearField();
                     initialize();
-
+                    //setDataToTable();
                     btnAdd.setText("Add");
                     btnAdd.setStyle("-fx-background-color: #1abc9c");
                     isEdit = false;
@@ -154,5 +158,5 @@ public class AddItemController {
             alert.show();
         }
     }
-    
+
 }
