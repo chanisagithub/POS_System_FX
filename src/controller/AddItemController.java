@@ -6,6 +6,7 @@ import dto.ItemDTO;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.Date;
 import java.sql.SQLOutput;
@@ -37,9 +38,38 @@ public class AddItemController {
     private boolean isEdit=false;
 
     public void initialize(){
+        generateAndSetNextId();
+
+        colItemID.setCellValueFactory(new PropertyValueFactory<>("ItemID"));
+        colItemName.setCellValueFactory(new PropertyValueFactory<>("ItemName"));
+        colBatchNo.setCellValueFactory(new PropertyValueFactory<>("batchNumber"));
+        colItemPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+        colExpireDate.setCellValueFactory(new PropertyValueFactory<>("expireDate"));
+        colSupplier.setCellValueFactory(new PropertyValueFactory<>("supplier"));
+
 
     }
 
+    private void loadItemDataToFields(ItemDTO selectedItem){
+        ItemDTO selectedItemDetails = itemBo.getItemByID(selectedItem.getItemID());
+        txtSupplier.setText(selectedItemDetails.getSupplier());
+        txtBatchNumber.setText(selectedItemDetails.getBatchNumber());
+        txtItemId.setText(selectedItemDetails.getItemID());
+        txtItemPrice.setText(String.format("%.2f",selectedItemDetails.getPrice()));
+        pickerExpireDate.getEditor().setText(String.valueOf(selectedItemDetails.getExpireDate()));
+        txtItemName.setText(selectedItemDetails.getItemName());
+        txtQty.setText(String.format("%.2f",selectedItemDetails.getQty()));
+    }
+
+
+    public void generateAndSetNextId(){
+        txtItemId.setText(itemBo.getNextID());
+    }
+
+    public void setDataToTable(){
+        allItems = itemBo.getAllItems();
+        tblItems.setItems(allItems);
+    }
 
     public void btnAddItem(ActionEvent actionEvent) {
         if (!isEdit){
@@ -98,7 +128,7 @@ public class AddItemController {
         pickerExpireDate.getEditor().clear();
     }
 
-    
+
 
     public void btnCancel(ActionEvent actionEvent) {
     }
