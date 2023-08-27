@@ -1,0 +1,5 @@
+
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(—¥’•8¬»Ú£1
+Š
+java:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(®»ÄÂ8±»Ú£1

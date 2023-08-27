@@ -1,0 +1,11 @@
+
+t
+java:S1104"WMake txtusername a static final constant or non-public and provide accessors if needed.(à¢À½8µÅ‡†£1
+y
+java:S1104"WMake txtpassword a static final constant or non-public and provide accessors if needed.(ï€ëÀúÿÿÿÿ8¶Å‡†£1
+V
+java:S1854*"9Remove this useless assignment to local variable "alert".(”Þ¡õ8‘Æ‡†£1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(·˜íÑüÿÿÿÿ8˜Æ‡†£1
+G
+java:S1481*"*Remove this unused "alert" local variable.(”Þ¡õ8¡Æ‡†£1

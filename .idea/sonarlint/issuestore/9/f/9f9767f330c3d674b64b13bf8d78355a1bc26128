@@ -1,0 +1,12 @@
+
+J
+java:S1121".Extract the assignment out of this expression.(à—ˆy8¯óïŒ£1
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(®àÅº8½óïŒ£1
+M
+java:S1128"0Remove this unused import 'dao.custom.LoginDAO'.(‚«ù8ÄóïŒ£1
+L
+java:S1128"0Remove this unused import 'dao.custom.OrderDAO'.(Ò‘¹N8ÄóïŒ£1
+Y
+java:S1128
+"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8ÄóïŒ£1
