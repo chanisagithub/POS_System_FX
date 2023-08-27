@@ -73,7 +73,13 @@ public class AddItemController {
 
                 if(updateResult){
                     Alert alert= new Alert(Alert.AlertType.INFORMATION,"Successfully Updated");
-                    alert.showAndWait();
+                    alert.show();
+                    clearField();
+                    initialize();
+
+                    btnAdd.setText("Add");
+                    btnAdd.setStyle("-fx-background-color: #1abc9c");
+                    isEdit = false;
 
                 }else{
                     System.out.println("Not Updated");
@@ -81,6 +87,18 @@ public class AddItemController {
             }
         }
     }
+
+    public void clearField(){
+        txtItemId.clear();
+        txtItemName.clear();
+        txtItemPrice.clear();
+        txtBatchNumber.clear();
+        txtSupplier.clear();
+        txtQty.clear();
+        pickerExpireDate.getEditor().clear();
+    }
+
+    
 
     public void btnCancel(ActionEvent actionEvent) {
     }
