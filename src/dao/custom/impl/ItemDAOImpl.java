@@ -23,7 +23,7 @@ public class ItemDAOImpl implements ItemDAO {
             item.getQty(),
             item.getSupplier(),
             item.getExpireDate()
-        );
+            );
         } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();
         }
