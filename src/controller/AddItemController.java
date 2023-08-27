@@ -29,8 +29,8 @@ public class AddItemController {
     public DatePicker pickerExpireDate;
     public Button btnAdd;
     public Button btnCancel;
-    public Button btnUpdate;
     public Button btnDelete;
+    public Button btnEdit;
 
     private int selectedIndex = -1;
     private ObservableList<ItemDTO> allItems;
@@ -47,6 +47,11 @@ public class AddItemController {
         colExpireDate.setCellValueFactory(new PropertyValueFactory<>("expireDate"));
         colSupplier.setCellValueFactory(new PropertyValueFactory<>("supplier"));
 
+        setDataToTable();
+
+        tblItems.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) ->{
+            selectedIndex = (int) newValue;
+        });
 
     }
 
@@ -133,9 +138,21 @@ public class AddItemController {
     public void btnCancel(ActionEvent actionEvent) {
     }
 
-    public void btnUpdate(ActionEvent actionEvent) {
-    }
+
 
     public void btnDelete(ActionEvent actionEvent) {
     }
+
+    public void btnEditOnAction(ActionEvent actionEvent) {
+        if(selectedIndex != -1){
+            loadItemDataToFields(allItems.get(selectedIndex));
+            btnAdd.setText("Update");
+            btnAdd.setStyle("-fx-background-color: #f1c40f");
+            isEdit=true;
+        }else{
+            Alert alert= new Alert(Alert.AlertType.ERROR,"Please select item first");
+            alert.show();
+        }
+    }
+    
 }
