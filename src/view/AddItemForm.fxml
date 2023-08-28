@@ -14,7 +14,7 @@
     <children>
         <Label layoutX="21.0" layoutY="14.0" prefHeight="34.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="ADD ITEMS" textFill="WHITE">
             <font>
-                <Font size="29.0" />
+                <Font name="System Bold" size="29.0" />
             </font>
         </Label>
         <TextField fx:id="txtItemId" layoutX="132.0" layoutY="60.0" prefHeight="26.0" prefWidth="146.0" promptText="Item ID" />

@@ -37,7 +37,12 @@ public class MenuBarController implements Initializable {
         startClock();
 
         URL resourse = getClass().getResource("/view/Dashboard.fxml");
-        Parent load = FXMLLoader.load(resourse);
+        Parent load = null;
+        try {
+            load = FXMLLoader.load(resourse);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         playgroundAnchorpane.getChildren().clear();
         playgroundAnchorpane.getChildren().add(load);
 
@@ -63,7 +68,7 @@ public class MenuBarController implements Initializable {
 
 
     public void dashboardOnAction(ActionEvent actionEvent) throws IOException {
-        URL resource = getClass().getResource("/view/CustomerForm.fxml");
+        URL resource = getClass().getResource("/view/Dashboard.fxml");
         Parent load = FXMLLoader.load(resource);
         playgroundAnchorpane.getChildren().clear();
         playgroundAnchorpane.getChildren().add(load);

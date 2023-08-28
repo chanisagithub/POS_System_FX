@@ -140,6 +140,10 @@ public class AddItemController {
 
 
     public void btnCancel(ActionEvent actionEvent) {
+        clearField();
+        btnAdd.setText("Add");
+        
+        isEdit = false;
     }
 
 

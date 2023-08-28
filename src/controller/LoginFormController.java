@@ -27,8 +27,7 @@ public class LoginFormController {
 
         Boolean result = loginBO.checkPassword(username,password);
         if (Boolean.TRUE.equals(result)){
-            String userFullName = loginBO.getUserFullName(username);
-            ObjectPasser.userFullName = userFullName;
+            ObjectPasser.userFullName = loginBO.getUserFullName(username);
             Parent load = FXMLLoader.load(getClass().getResource("../view/MenuBar.fxml"));
             Scene scene = new Scene(load);
             Stage stage = new Stage();
