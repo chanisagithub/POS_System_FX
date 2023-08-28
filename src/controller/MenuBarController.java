@@ -5,6 +5,7 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
@@ -27,6 +28,7 @@ public class MenuBarController implements Initializable {
 
     public LocalTime currentTime;
     public AnchorPane playgroundAnchorpane;
+    public Button btnDashboard;
 
     @SneakyThrows
     @Override
@@ -60,4 +62,10 @@ public class MenuBarController implements Initializable {
     }
 
 
+    public void dashboardOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("/view/CustomerForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        playgroundAnchorpane.getChildren().clear();
+        playgroundAnchorpane.getChildren().add(load);
+    }
 }
