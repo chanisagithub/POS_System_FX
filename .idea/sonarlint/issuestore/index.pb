@@ -23,8 +23,6 @@ R
 "src/bo/custom/impl/ItemBoImpl.java,4/8/48322e41eed8286f0deb3aaef3091030e35a85bf
 E
 src/bo/BOFactory.java,5/8/585c440c7082b46076f342a118f2ad4c9a3024ab
-G
-src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87
 J
 src/bo/custom/LoginBO.java,a/6/a6263c6be353201eac12ce91ac68ccaef0f7e4df
 S
@@ -79,3 +77,5 @@ I
 src/view/AddItemForm.fxml,1/1/11bc689a42151172df7fecbc2631bcd0dcc61ea4
 U
 %src/controller/AddItemController.java,c/9/c941749f9fc22dc56a4d0dccc54275b46aa3bd69
+G
+src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87

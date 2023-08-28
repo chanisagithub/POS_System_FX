@@ -29,8 +29,6 @@ E
 src/bo/BOFactory.java,5/8/585c440c7082b46076f342a118f2ad4c9a3024ab
 W
 'src/controller/LoginFormController.java,7/4/7492ebf3259d3f6a1bf20a354fdfc0c0e301185f
-G
-src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87
 L
 src/dao/custom/OrderDAO.java,7/f/7fa5d1763fe2245f1805b3c58e7bf764d4866b26
 L
@@ -79,3 +77,5 @@ T
 $src/dao/custom/impl/ItemDAOImpl.java,6/8/68d5d42978325d0a8b8d2a00cad121cc3283f7ff
 I
 src/view/AddItemForm.fxml,1/1/11bc689a42151172df7fecbc2631bcd0dcc61ea4
+G
+src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87

@@ -1,17 +1,0 @@
-
-}
-java:S1104"[Make txtUserFullName a static final constant or non-public and provide accessors if needed.(ğ¨»ñøÿÿÿÿ8Ë¸ÈŒ£1
-p
-java:S1104"SMake lblTime a static final constant or non-public and provide accessors if needed.(¿°×•8Ë¸ÈŒ£1
-u
-java:S1104"SMake lblDate a static final constant or non-public and provide accessors if needed.(…“À„ÿÿÿÿÿ8Ë¸ÈŒ£1
-y
-java:S1104"WMake currentTime a static final constant or non-public and provide accessors if needed.(‡ŸÂşÿÿÿÿ8Ë¸ÈŒ£1
-}
-java:S1104"`Make playgroundAnchorpane a static final constant or non-public and provide accessors if needed.(äÂ¸Î8Ì¸ÈŒ£1
-T
-java:S11727"2Remove this unused method parameter "actionEvent".(“–¡ïùÿÿÿÿ8í¸ÈŒ£1
-J
-java:S1128"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8î¸ÈŒ£1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8î¸ÈŒ£1

@@ -40,6 +40,7 @@ public class LoginFormController {
             loginStage.close();
         }else {
             Alert alert = new Alert(Alert.AlertType.ERROR,"Login Failed");
+            alert.show();
         }
     }
 }
