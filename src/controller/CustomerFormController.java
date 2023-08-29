@@ -26,6 +26,8 @@ public class CustomerFormController {
     public Button btnDelete;
     public Button btnEdit;
 
+    private int selectedIndex = -1;
+
     private ObservableList<CustomerDTO> allItems;
 
     private CustomerBO customerBO= (CustomerBO) BOFactory.getBoFactory().getBo(BOFactory.BoTypes.CUSTOMER);
@@ -55,6 +57,10 @@ public class CustomerFormController {
                 !txtFirstName.getText().isEmpty() &&
                 !txtLastName.getText().isEmpty() &&
                 !txtNic.getText().isEmpty();
+    }
+
+    private void loadCustomerDataToTable(CustomerDTO selectedCustomer){
+        CustomerDTO selectedCustomerDetails = customerBO.
     }
     public void btnAddOnAction(ActionEvent actionEvent) {
         //validating Entries
