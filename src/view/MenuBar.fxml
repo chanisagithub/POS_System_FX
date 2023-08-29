@@ -56,8 +56,8 @@
       </MenuButton>
       <MenuButton id="btnmenuCustomer" layoutX="560.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 0 0 0;" text="Customer">
          <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem fx:id="btnAddCustomer" mnemonicParsing="false" onAction="#addCustomerOnAction" text="Manage Customer" />
+            <MenuItem mnemonicParsing="false" text="View Customers" />
          </items>
          <font>
             <Font size="20.0" />
@@ -68,8 +68,8 @@
       </MenuButton>
       <MenuButton id="btnmenuItems" layoutX="705.0" layoutY="41.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="132.0" style="-fx-background-color: #1abae8; -fx-background-radius: 0 5 5 0;" text="Items">
          <items>
-            <MenuItem mnemonicParsing="false" onAction="#addItemOnAction" text="Add Item" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem fx:id="btnAddItems" mnemonicParsing="false" onAction="#addItemOnAction" text="Add Item" />
+            <MenuItem mnemonicParsing="false" text="Manage Item" />
          </items>
          <font>
             <Font size="20.0" />
