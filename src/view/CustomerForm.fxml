@@ -53,7 +53,7 @@
       <TextField fx:id="txtLastName" layoutX="698.0" layoutY="57.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter last name" style="-fx-background-radius: 0 0 0 0;" />
       <TextField fx:id="txtAddress" layoutX="698.0" layoutY="118.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Address" style="-fx-background-radius: 0 0 0 0;" />
       <TextField fx:id="txtNic" layoutX="698.0" layoutY="179.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter NIC" style="-fx-background-radius: 0 0 0 0;" />
-      <Button fx:id="btnClear" layoutX="699.0" layoutY="234.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #c8d6e5; -fx-background-radius: 0 0 0 0;" text="Clear">
+      <Button fx:id="btnClear" layoutX="699.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #c8d6e5; -fx-background-radius: 0 0 0 0;" text="Clear">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -73,12 +73,12 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btnDelete" layoutX="698.0" layoutY="561.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #ee5253; -fx-background-radius: 0 0 0 0;" text="Delete">
+      <Button fx:id="btnDelete" layoutX="698.0" layoutY="561.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #ee5253; -fx-background-radius: 0 0 0 0;" text="Delete">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btnEdit" layoutX="830.0" layoutY="561.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #feca57; -fx-background-radius: 0 0 0 0;" text="Edit">
+      <Button fx:id="btnEdit" layoutX="830.0" layoutY="561.0" mnemonicParsing="false" onAction="#btnEditOnAction" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #feca57; -fx-background-radius: 0 0 0 0;" text="Edit">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

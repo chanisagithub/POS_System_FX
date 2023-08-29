@@ -82,4 +82,19 @@ public class CustomerFormController {
             new Alert(Alert.AlertType.ERROR,"Please fill all data !").show();
         }
     }
+
+    public void btnDeleteOnAction(ActionEvent actionEvent) {
+    }
+
+    public void btnEditOnAction(ActionEvent actionEvent) {
+    }
+
+    public void btnClearOnAction(ActionEvent actionEvent) {
+        txtCustID.clear();
+        txtFirstName.clear();
+        txtLastName.clear();
+        txtContact.clear();
+        txtAddress.clear();
+        txtNic.clear();
+    }
 }
