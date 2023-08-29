@@ -21,8 +21,6 @@ S
 #src/bo/custom/impl/LoginBoImpl.java,f/5/f50bab4271fb658eb0e8e6bc51161ff925d1f705
 E
 src/bo/BOFactory.java,5/8/585c440c7082b46076f342a118f2ad4c9a3024ab
-W
-'src/controller/LoginFormController.java,7/4/7492ebf3259d3f6a1bf20a354fdfc0c0e301185f
 L
 src/dao/custom/OrderDAO.java,7/f/7fa5d1763fe2245f1805b3c58e7bf764d4866b26
 L
@@ -36,8 +34,6 @@ L
 D
 src/dto/ItemDTO.java,3/f/3fffa2e587c320bb54a783e4241cd0f27a3da4fa
 H
-src/dto/CustomerDTO.java,4/7/47335306aa543fd75295c1dca4058e52b5606dd1
-H
 src/db/DbConnection.java,8/e/8e2efd5556e1055de49628692613d2236e3e330d
 E
 src/dao/CrudUtil.java,5/1/51ef932cd0902cea63ec682bc6851548809628a8
@@ -49,3 +45,25 @@ H
 src/entity/Customer.java,9/1/9130f402c4adfb75c7304ce743f9a91f05d3715b
 D
 src/entity/Item.java,6/6/661fe644ad70125447825c9142ac99e7d97add7c
+;
+qodana.yaml,8/5/85c3a901608a6b9adf48d245fa84828b66304e51
+E
+src/view/MenuBar.fxml,9/7/97b280b1f6cb19ad5741510c1d911166b4034201
+G
+src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87
+I
+src/bo/custom/ItemBO.java,5/6/566e7d12aa26f124ad9900a71128f277c83a2a18
+R
+"src/bo/custom/impl/ItemBoImpl.java,4/8/48322e41eed8286f0deb3aaef3091030e35a85bf
+W
+'src/controller/LoginFormController.java,7/4/7492ebf3259d3f6a1bf20a354fdfc0c0e301185f
+J
+src/view/CustomerForm.fxml,b/a/ba93c60447032d7aa87b9a9820705f713724b4c3
+U
+%src/controller/MenuBarController.java,f/3/f3533b44741a8c5615e68246cf4f0c69cf2b554f
+G
+src/view/Dashboard.fxml,e/a/eae2cdc69777a5a9ddd8731353f917f398d5f804
+W
+'src/controller/DashboardController.java,9/4/94cea2dd1c2ab300175205d98b2203846b71e7d4
+I
+src/view/AddItemForm.fxml,1/1/11bc689a42151172df7fecbc2631bcd0dcc61ea4
