@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.CustomerFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="609.0" prefWidth="975.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="13.0" prefHeight="35.0" prefWidth="254.0" text="Customer Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField layoutX="197.0" layoutY="57.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Customer ID" style="-fx-background-radius: 0 0 0 0;" />
+      <Label layoutX="61.0" layoutY="57.0" prefHeight="20.0" prefWidth="106.0" text="Customer ID :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="118.0" prefHeight="20.0" prefWidth="106.0" text="Contact :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="197.0" layoutY="118.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter contact number" style="-fx-background-radius: 0 0 0 0;" />
+      <Label layoutX="61.0" layoutY="179.0" prefHeight="20.0" prefWidth="106.0" text="First Name :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="197.0" layoutY="179.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter first name" style="-fx-background-radius: 0 0 0 0;" />
+      <Label layoutX="591.0" layoutY="57.0" prefHeight="20.0" prefWidth="106.0" text="Last Name :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="118.0" prefHeight="20.0" prefWidth="106.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="179.0" prefHeight="20.0" prefWidth="106.0" text="NIC :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="698.0" layoutY="57.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter last name" style="-fx-background-radius: 0 0 0 0;" />
+      <TextField layoutX="698.0" layoutY="118.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Address" style="-fx-background-radius: 0 0 0 0;" />
+      <TextField layoutX="698.0" layoutY="179.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter NIC" style="-fx-background-radius: 0 0 0 0;" />
+      <Button layoutX="699.0" layoutY="234.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #c8d6e5; -fx-background-radius: 0 0 0 0;" text="Clear">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView layoutX="20.0" layoutY="300.0" prefHeight="242.0" prefWidth="932.0">
+        <columns>
+          <TableColumn prefWidth="84.89465141296387" text="CustomerID" />
+          <TableColumn prefWidth="162.39167022705078" text="First Name" />
+            <TableColumn prefWidth="173.1083221435547" text="Last Name" />
+            <TableColumn prefWidth="132.41241455078125" text="Coontact Number" />
+            <TableColumn prefWidth="251.91241455078125" text="Address" />
+            <TableColumn prefWidth="130.90350341796875" text="NIC" />
+        </columns>
+      </TableView>
+      <Button layoutX="828.0" layoutY="234.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 0 0 0 0;" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="698.0" layoutY="561.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #ee5253; -fx-background-radius: 0 0 0 0;" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="830.0" layoutY="561.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #feca57; -fx-background-radius: 0 0 0 0;" text="Edit">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutX="14.0" layoutY="288.0" prefHeight="0.0" prefWidth="947.0" />
+   </children>
 </AnchorPane>
