@@ -15,16 +15,12 @@ $src/bo/custom/impl/OrderbBoImpl.java,c/f/cfddf24b188a08a3c183f3649dc7320d989c8
 src/script.sql,8/f/8fabe3755e1ead5799c15bb382666c6712f45baa
 G
 src/view/LoginForm.fxml,3/6/360d6d8c13934676281e9df5abd975e1337e3719
-J
-src/bo/custom/LoginBO.java,a/6/a6263c6be353201eac12ce91ac68ccaef0f7e4df
 S
 #src/bo/custom/impl/LoginBoImpl.java,f/5/f50bab4271fb658eb0e8e6bc51161ff925d1f705
 E
 src/bo/BOFactory.java,5/8/585c440c7082b46076f342a118f2ad4c9a3024ab
 L
 src/dao/custom/OrderDAO.java,7/f/7fa5d1763fe2245f1805b3c58e7bf764d4866b26
-L
-src/dao/custom/LoginDAO.java,f/4/f47bf3b04a5ffbc9523b21eec5261b0577324049
 U
 %src/dao/custom/impl/LoginDAOImpl.java,d/8/d8702fe775049e85bc28906a12ab4991c62f970a
 J
@@ -51,10 +47,6 @@ E
 src/view/MenuBar.fxml,9/7/97b280b1f6cb19ad5741510c1d911166b4034201
 G
 src/AppInitializer.java,5/8/580cc932433633b711bc392ae543e0f12b1bae87
-I
-src/bo/custom/ItemBO.java,5/6/566e7d12aa26f124ad9900a71128f277c83a2a18
-R
-"src/bo/custom/impl/ItemBoImpl.java,4/8/48322e41eed8286f0deb3aaef3091030e35a85bf
 W
 'src/controller/LoginFormController.java,7/4/7492ebf3259d3f6a1bf20a354fdfc0c0e301185f
 J

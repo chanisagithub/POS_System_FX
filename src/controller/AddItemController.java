@@ -90,15 +90,13 @@ public class AddItemController {
 
             boolean b = itemBo.saveItem(itemDTO);
 
-            if (b){
-                Alert alert = new Alert(Alert.AlertType.INFORMATION,"Item Saved");
+            if (b) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Item Saved");
                 alert.show();
-                
                 clearField();
                 generateAndSetNextId();
                 setDataToTable();
-
-
+            }
             }else{
                 boolean updateResult = itemBo.updateItem(new ItemDTO(
                         txtItemId.getText(),
@@ -121,10 +119,9 @@ public class AddItemController {
                     isEdit = false;
 
                 }else{
-                    System.out.println("Not Updated");
+                    new Alert(Alert.AlertType.ERROR,"Not Updated !").show();
                 }
             }
-        }
     }
 
     public void clearField(){
@@ -142,7 +139,7 @@ public class AddItemController {
     public void btnCancel(ActionEvent actionEvent) {
         clearField();
         btnAdd.setText("Add");
-        
+        btnAdd.setStyle("-fx-background-color: blackß");
         isEdit = false;
     }
 
