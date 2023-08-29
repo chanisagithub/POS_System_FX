@@ -6,6 +6,8 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Getter
+@Setter
 @ToString
 public class ItemDTO {
     private String itemID;
