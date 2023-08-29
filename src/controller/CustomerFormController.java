@@ -81,6 +81,7 @@ public class CustomerFormController {
         txtAddress.setText(selectedCustomerDetails.getAddress());
         txtNic.setText(selectedCustomerDetails.getNic());
         txtCustID.setText(selectedCustomerDetails.getCustomerID());
+        txtContact.setText(selectedCustomerDetails.getContactNumber());
     }
     public void btnAddOnAction(ActionEvent actionEvent) {
         //validating Entries
