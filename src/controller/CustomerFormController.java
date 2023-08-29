@@ -6,6 +6,7 @@ import dto.CustomerDTO;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class CustomerFormController {
     public TextField txtCustID;
@@ -35,6 +36,20 @@ public class CustomerFormController {
 
     public void initialize(){
         txtCustID.setText(customerBO.generateNextCustomerID());
+
+        colCustID.setCellValueFactory(new PropertyValueFactory<>("CustomerID"));
+        colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
+        colFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        colLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        colNic.setCellValueFactory(new PropertyValueFactory<>("nic"));
+        colAddress.setCellValueFactory(new PropertyValueFactory<>("Address"));
+        colContact.setCellValueFactory(new PropertyValueFactory<>("contactNumber"));
+
+        setDataToTable();
+
+        tblCustomer.getSelectionModel().selectedIndexProperty().addListener((observable,oldValue,newValue)->{
+            selectedIndex = (int) newValue;
+        });
     }
 
     public void clearData(){
@@ -45,10 +60,9 @@ public class CustomerFormController {
         txtAddress.clear();
     }
 
-    public void setDataToTable(CustomerDTO selectedCustomer){
+    public void setDataToTable(){
         allCustomers = customerBO.getAllCustomers();
         tblCustomer.setItems(allCustomers);
-
     }
 
     public boolean emptyValidation(){
