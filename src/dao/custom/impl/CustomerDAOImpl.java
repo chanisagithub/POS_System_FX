@@ -4,9 +4,11 @@ import bo.custom.CustomerBO;
 import dao.CrudUtil;
 import dao.custom.CustomerDAO;
 import entity.Customer;
+import entity.Item;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class CustomerDAOImpl  implements CustomerDAO {
     @Override
@@ -24,6 +26,26 @@ public class CustomerDAOImpl  implements CustomerDAO {
             throwables.printStackTrace();
         }
         return false;
+    }
+    @Override
+    public ArrayList<Customer> getAllCustomers(){
+        ArrayList<Customer> allICustomers = new ArrayList<>();
+        try{
+            ResultSet resultSet = CrudUtil.executeQuery("SELECT * FROM Customer");
+            while (resultSet.next()){
+                allICustomers.add(new Customer(
+                        resultSet.getString("customerID"),
+                        resultSet.getString("firstName"),
+                        resultSet.getString("lastName"),
+                        resultSet.getString("nic"),
+                        resultSet.getString("address"),
+                        resultSet.getString("contactNumber")
+                ));
+            }
+        } catch (SQLException | ClassNotFoundException throwables){
+            throwables.printStackTrace();
+        }
+        return allICustomers;
     }
 
     @Override

@@ -27,8 +27,9 @@ public class CustomerFormController {
     public Button btnEdit;
 
     private int selectedIndex = -1;
+    private boolean isEdit=false;
 
-    private ObservableList<CustomerDTO> allItems;
+    private ObservableList<CustomerDTO> allCustomers;
 
     private CustomerBO customerBO= (CustomerBO) BOFactory.getBoFactory().getBo(BOFactory.BoTypes.CUSTOMER);
 
@@ -44,9 +45,9 @@ public class CustomerFormController {
         txtAddress.clear();
     }
 
-    public void setDataToTable(){
-        allItems = customerBO;
-        tblCustomer.setItems();
+    public void setDataToTable(CustomerDTO selectedCustomer){
+        allCustomers = customerBO.getAllCustomers();
+        tblCustomer.setItems(allCustomers);
 
     }
 
@@ -60,7 +61,12 @@ public class CustomerFormController {
     }
 
     private void loadCustomerDataToTable(CustomerDTO selectedCustomer){
-        CustomerDTO selectedCustomerDetails = customerBO.
+        CustomerDTO selectedCustomerDetails = customerBO.getCustomerByContactNumber(selectedCustomer.getContactNumber());
+        txtFirstName.setText(selectedCustomerDetails.getFirstName());
+        txtLastName.setText(selectedCustomerDetails.getLastName());
+        txtAddress.setText(selectedCustomerDetails.getAddress());
+        txtNic.setText(selectedCustomerDetails.getNic());
+        txtCustID.setText(selectedCustomerDetails.getCustomerID());
     }
     public void btnAddOnAction(ActionEvent actionEvent) {
         //validating Entries
@@ -93,6 +99,14 @@ public class CustomerFormController {
     }
 
     public void btnEditOnAction(ActionEvent actionEvent) {
+        if (selectedIndex !=-1){
+            loadCustomerDataToTable(allCustomers.get(selectedIndex));
+            btnAdd.setText("Update");
+            btnAdd.setStyle("-fx-background-color: #f1c40f");
+            isEdit = true;
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Please select customer first !").show();
+        }
     }
 
     public void btnClearOnAction(ActionEvent actionEvent) {

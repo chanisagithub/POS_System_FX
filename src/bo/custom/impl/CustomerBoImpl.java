@@ -5,6 +5,10 @@ import dao.DAOFactory;
 import dao.custom.CustomerDAO;
 import dto.CustomerDTO;
 import entity.Customer;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import java.util.ArrayList;
 
 public class CustomerBoImpl implements CustomerBO {
 
@@ -41,6 +45,24 @@ public class CustomerBoImpl implements CustomerBO {
                 ccn.getAddress(),
                 ccn.getContactNumber()
         );
+    }
+
+    @Override
+    public ObservableList<CustomerDTO> getAllCustomers(){
+        ArrayList<Customer> allCustomers= customerDAO.getAllCustomers();
+        ObservableList<CustomerDTO> allCustomerForTable = FXCollections.observableArrayList();
+        for (Customer c :allCustomers){
+            allCustomerForTable.add(new CustomerDTO(
+                    c.getCustomerID(),
+                    c.getFirstName(),
+                    c.getLastName(),
+                    c.getNic(),
+                    c.getAddress(),
+                    c.getContactNumber()
+
+            ));
+        }
+        return allCustomerForTable;
     }
 
 }
