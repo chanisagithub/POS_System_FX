@@ -41,6 +41,7 @@ public class MenuBarController implements Initializable {
         startClock();
 
         URL resource = getClass().getResource("/view/Dashboard.fxml");
+
         Parent load = null;
         try {
             load = FXMLLoader.load(resource);

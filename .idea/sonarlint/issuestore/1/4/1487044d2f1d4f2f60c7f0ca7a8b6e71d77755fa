@@ -1,0 +1,63 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(•³îŞùÿÿÿÿ8‘úäŠ¤1
+L
+java:S3740"/Provide the parametrized type for this generic.(¹“ù‰8‘úäŠ¤1
+Q
+java:S3740"/Provide the parametrized type for this generic.(ñìĞÒüÿÿÿÿ8‘úäŠ¤1
+L
+java:S3740"/Provide the parametrized type for this generic.(ßÁ£á8‘úäŠ¤1
+L
+java:S3740"/Provide the parametrized type for this generic.(Ş˜ıÚ8’úäŠ¤1
+L
+java:S3740"/Provide the parametrized type for this generic.(¯ÿı°8’úäŠ¤1
+L
+java:S3740"/Provide the parametrized type for this generic.(«ÍŞí8’úäŠ¤1
+r
+java:S1104"UMake txtCustID a static final constant or non-public and provide accessors if needed.(êøş®8’úäŠ¤1
+x
+java:S1104"VMake txtContact a static final constant or non-public and provide accessors if needed.(ıõ¸£ÿÿÿÿÿ8’úäŠ¤1
+z
+java:S1104"XMake txtFirstName a static final constant or non-public and provide accessors if needed.(—Àµ‹úÿÿÿÿ8’úäŠ¤1
+t
+java:S1104"WMake txtLastName a static final constant or non-public and provide accessors if needed.(Ğ…Áó8’úäŠ¤1
+x
+java:S1104"VMake txtAddress a static final constant or non-public and provide accessors if needed.(ºåıÿÿÿÿ8’úäŠ¤1
+t
+java:S1104"RMake txtNic a static final constant or non-public and provide accessors if needed.(‚¿¤ûÿÿÿÿ8’úäŠ¤1
+v
+java:S1104"TMake btnClear a static final constant or non-public and provide accessors if needed.(¸¹„üÿÿÿÿ8“úäŠ¤1
+y
+java:S1104"WMake tblCustomer a static final constant or non-public and provide accessors if needed.(•³îŞùÿÿÿÿ8“úäŠ¤1
+r
+java:S1104"UMake colCustID a static final constant or non-public and provide accessors if needed.(¹“ù‰8“úäŠ¤1
+z
+java:S1104"XMake colFirstName a static final constant or non-public and provide accessors if needed.(ñìĞÒüÿÿÿÿ8“úäŠ¤1
+t
+java:S1104"WMake colLastName a static final constant or non-public and provide accessors if needed.(ßÁ£á8“úäŠ¤1
+s
+java:S1104"VMake colContact a static final constant or non-public and provide accessors if needed.(Ş˜ıÚ8“úäŠ¤1
+s
+java:S1104"VMake colAddress a static final constant or non-public and provide accessors if needed.(¯ÿı°8“úäŠ¤1
+o
+java:S1104"RMake colNic a static final constant or non-public and provide accessors if needed.(«ÍŞí8“úäŠ¤1
+o
+java:S1104"RMake btnAdd a static final constant or non-public and provide accessors if needed.(‰ÂÈ8“úäŠ¤1
+r
+java:S1104"UMake btnDelete a static final constant or non-public and provide accessors if needed.(ˆªü›8“úäŠ¤1
+p
+java:S1104"SMake btnEdit a static final constant or non-public and provide accessors if needed.(¼“¸8“úäŠ¤1
+
+java:S1186q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Œ“‘8¥úäŠ¤1
+w
+java:S1450"URemove the "isEdit" field and declare it as a local variable in the relevant methods.(¥ˆŞÇıÿÿÿÿ8¦úäŠ¤1
+I
+java:S16022",Remove useless curly braces around statement(ì‰Ú 8ªúäŠ¤1
+T
+java:S1172V"2Remove this unused method parameter "actionEvent".(»…ä«ùÿÿÿÿ8¯úäŠ¤1
+T
+java:S1172t"2Remove this unused method parameter "actionEvent".(û°œ§ıÿÿÿÿ8²úäŠ¤1
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(ŠÜÎ£8³úäŠ¤1
+L
+java:S1068"*Remove this unused "isEdit" private field.(¥ˆŞÇıÿÿÿÿ8´úäŠ¤1
